@@ -1,0 +1,181 @@
+.autocomplete {
+  position: relative;
+}
+.autocomplete-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.teams-join--headline {
+  max-width: 22em;
+  font-size: var(--fs-headline1);
+  line-height: var(--lh-sm);
+}
+.teams-join--so {
+  background-color: #f1f2f3;
+}
+.teams-join--so .svg-icon {
+  width: 54px;
+  height: 64px;
+}
+.teams-join--logo {
+  background-color: #e76f0d;
+  font-size: 4.30769231rem;
+  line-height: 1.28571429;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.teams-callout {
+  position: relative;
+  padding: var(--su16);
+  border: 1px solid transparent;
+  border-radius: var(--br-sm);
+  color: var(--fc-black-600);
+}
+.teams-callout--header {
+  margin: calc(var(--su16) + var(--su1) * -1) calc(var(--su16) + var(--su1)) 0;
+  width: calc(100% + var(--su32) + var(--su2));
+  border-radius: var(--br-sm) var(--br-sm) 0 0;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.teams-callout--tag {
+  position: absolute;
+  top: -10px;
+  left: 4px;
+}
+.teams-callout--tag-background {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  transform: skewX(25deg);
+  border-radius: var(--br-sm);
+  background-color: #e76f0d;
+}
+.teams-callout--tag-copy {
+  position: relative;
+  top: 1px;
+  padding: var(--su4) var(--su8);
+  z-index: 1;
+  font-size: 0.769rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+.channels-tageditor > .tag-editor {
+  margin-top: var(--su8);
+  margin-left: var(--su16);
+  padding-left: var(--su2);
+  width: 520px !important;
+  height: 36px !important;
+}
+.integration-settings .integration-settings--section {
+  border-radius: var(--br-sm);
+  border: 1px solid var(--black-225);
+}
+.integration-settings .integration-settings--header {
+  background: var(--black-150);
+  border-bottom: 1px solid var(--black-225);
+}
+.integration-settings .integration-settings--list {
+  min-height: 80px;
+}
+.integration-settings .integration-settings--list .-header {
+  background: var(--black-100);
+  border-bottom: 1px solid var(--black-225);
+}
+.domain-list-item:last-of-type {
+  border-bottom-right-radius: var(--br-sm);
+  border-bottom-left-radius: var(--br-sm);
+}
+.svg14 .svg-icon {
+  width: 14px;
+  height: 14px;
+}
+.svg24 .svg-icon {
+  width: var(--su-static24);
+  height: var(--su-static24);
+}
+body.channels-page {
+  --theme-background-color: var(--black-100);
+  --theme-content-border-color: var(--black-200);
+}
+body.channels-page #content {
+  border-left: 1px solid var(--theme-content-border-color);
+  border-right: 1px solid var(--theme-content-border-color);
+}
+body.channels-page .s-topbar .s-topbar--logo .-img {
+  filter: invert(0.5) brightness(2);
+}
+body.channels-page .s-topbar {
+  border-top-width: 3px;
+  border-top-style: solid;
+  --theme-topbar-background-color: hsl(210, 8%, 5%);
+  --theme-topbar-bottom-border: var(--su-static1) solid hsl(210, 8%, 5%);
+  --theme-topbar-search-color: hsl(0, 0%, 100%);
+  --theme-topbar-search-background: hsl(210, 8%, 25%);
+  --theme-topbar-search-placeholder: hsl(210, 8%, 85%);
+  --theme-topbar-search-border: hsl(210, 8%, 45%);
+  --theme-topbar-select-color: hsl(210, 8%, 85%);
+  --theme-topbar-select-background: hsl(210, 8%, 35%);
+  --theme-topbar-item-color: hsl(210, 8%, 85%);
+  --theme-topbar-item-color-hover: var(--_white-static);
+  --theme-topbar-item-background-hover: hsl(210, 8%, 25%);
+  --theme-topbar-item-color-current: var(--_white-static);
+  --theme-topbar-accent-border: none;
+  --scrollbar: hsla(0, 0%, 100%, 0.2);
+  --theme-topbar-bottom-border: none;
+}
+body.channels-page .s-topbar .left-sidebar--sticky-container {
+  --theme-topbar-item-color: var(--black-500);
+}
+.question-summary h3 {
+  margin-bottom: var(--su4);
+  font-size: var(--fs-body2);
+  line-height: 1.3;
+}
+.question-summary .user-info {
+  padding: var(--su4) var(--su8);
+}
+.search-results {
+  margin-top: -10px;
+}
+[contenteditable="true"]:empty:before {
+  content: attr(placeholder);
+  color: var(--black-300);
+  display: block;
+}
+@keyframes researchshow {
+  0% {
+    transform: translate3d(0, 300px, 0);
+    opacity: 0;
+  }
+  25% {
+    transform: translate3d(0, -12px, 0);
+    opacity: 1;
+  }
+  40% {
+    transform: translate3d(0, -2px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes researchhide {
+  0%,
+  50% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  75% {
+    transform: translate3d(0, -12px, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 300px, 0);
+    opacity: 0;
+  }
+}
