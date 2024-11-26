@@ -179,3 +179,8 @@ body.channels-page .s-topbar .left-sidebar--sticky-container {
     opacity: 0;
   }
 }
+
+.left-sidebar {
+  border-right: 1px solid #ccc; /* Adjust color as needed */
+  height: 2000px; /* Ensure it covers the full height */
+}
